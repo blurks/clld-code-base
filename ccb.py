@@ -164,7 +164,7 @@ def main():
         print("{name:<16}: {url} {ar} (#{pr})".format(name=f.name, url=f.html_url,
                                                       ar="(ARCHIVED)" if f.archived else "",
                                                       pr=pr.number))
-        f.get_git_ref("heads/" + BRANCH).delete()
+        # f.get_git_ref("heads/" + BRANCH).delete()
 
 
 if __name__ == "__main__":
